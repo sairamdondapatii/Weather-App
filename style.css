@@ -5,10 +5,7 @@
     box-sizing: border-box;
 }
 body{
-    background:linear-gradient(315deg, #00DBDE 0%, #FC00FF 100%);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    background: #333;
 }
 .card{
     width: 92%;
@@ -98,24 +95,29 @@ body{
 }
 @media screen and (max-width:400px){
     .search{
+        flex-direction: column;
         justify-content: center;
-        background-color: #ebfffc;
         border-radius: 25px;
     }
     .search input{
         margin-right: 0px;
         width: 100%;
+        background-color: #edeef0;
+        border-radius: 10px;
        
 
     }
     .search button{
-       background: #006eff;
-       padding: 10px 40px;
+        background: #edeef0;
+        padding: 10px 40px;
         border-radius: 23px;
-        color: #fff;
-        width: 50px;
+        width: 50%;
+        margin-top: 20px;
     }
-    
+    .card{
+        background: transparent;
+        padding: 40px 8px;
+    }
     .weather-icon{
         width: 100px;
     }
